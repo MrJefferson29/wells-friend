@@ -33,7 +33,7 @@ const EditStory = () => {
         const getStoryInfo = async () => {
             setLoading(true)
             try {
-                const { data } = await axios.get(`https://ilan.onrender.com/story/editStory/${slug}`, config)
+                const { data } = await axios.get(`https://wells-friend.onrender.com/story/editStory/${slug}`, config)
                 setStory(data.data)
                 setTitle(data.data.title)
                 setAge(data.data.age)
@@ -67,7 +67,7 @@ const EditStory = () => {
         formdata.append("previousImage", previousImage)
 
         try {
-            const { data } = await axios.put(`https://ilan.onrender.com/story/${slug}/edit`, formdata, config)
+            const { data } = await axios.put(`https://wells-friend.onrender.com/story/${slug}/edit`, formdata, config)
 
             setSuccess('Edit Story successfully ')
 
@@ -170,7 +170,7 @@ const EditStory = () => {
                                 <div class="absolute">
                                     Currently Image
                                 </div>
-                                <img src={`https://new-bag.onrender.com/storyImages/${previousImage}`} alt="storyImage" />
+                                <img src={`https://wells-friend.onrender.com/storyImages/${previousImage}`} alt="storyImage" />
                             </div>
                             <div class="StoryImageField">
                                 <AiOutlineUpload />

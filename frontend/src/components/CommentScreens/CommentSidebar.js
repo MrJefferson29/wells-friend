@@ -17,7 +17,7 @@ const CommentSidebar = ({ slug, sidebarShowStatus, setSidebarShowStatus, activeU
 
   const getStoryComments = async () => {
     try {
-      const { data } = await axios.get(`https://ilan.onrender.com/comment/${slug}/getAllComment`)
+      const { data } = await axios.get(`https://wells-friend.onrender.com/comment/${slug}/getAllComment`)
       setCommentList(data.data)
       setCount(data.count)
     }

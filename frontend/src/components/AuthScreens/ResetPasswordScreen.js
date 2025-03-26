@@ -25,7 +25,7 @@ const ResetPasswordScreen = () => {
 
     try {
       const { data } = await axios.put(
-        `https://ilan.onrender.com/auth/resetpassword?resetPasswordToken=${token}`,
+        `https://wells-friend.onrender.com/auth/resetpassword?resetPasswordToken=${token}`,
         {
           password,
         }

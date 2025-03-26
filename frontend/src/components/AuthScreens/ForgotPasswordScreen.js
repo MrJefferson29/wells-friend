@@ -13,7 +13,7 @@ const ForgotPasswordScreen = () => {
 
     try {
       const { data } = await axios.post(
-        "https://ilan.onrender.com/auth/forgotpassword",
+        "https://wells-friend.onrender.com/auth/forgotpassword",
         { email }
       );
 

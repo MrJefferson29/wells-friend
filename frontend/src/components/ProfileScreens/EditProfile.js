@@ -27,7 +27,7 @@ const EditProfile = () => {
         formdata.append("photo", photo)
 
         try {
-            const { data } = await axios.post("https://ilan.onrender.com/user/editProfile", formdata, config)
+            const { data } = await axios.post("https://wells-friend.onrender.com/user/editProfile", formdata, config)
 
             setSuccess('Edit Profile successfully ')
             setTimeout(() => {
@@ -119,7 +119,7 @@ const EditProfile = () => {
                                     <div class="absolute">
                                         Currently Image
                                     </div>
-                                    <img src={`https://ilan.onrender.com/userPhotos/${previousPhoto}`} alt="userPhoto" />
+                                    <img src={`https://wells-friend.onrender.com/userPhotos/${previousPhoto}`} alt="userPhoto" />
                                 </div>
 
                             </div>

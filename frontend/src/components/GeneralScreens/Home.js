@@ -37,7 +37,7 @@ const Home = () => {
     const getStories = async () => {
       setLoading(true);
       try {
-        let url = `https://ilan.onrender.com/story/getAllStories?page=${page}`;
+        let url = `https://wells-friend.onrender.com/story/getAllStories?page=${page}`;
         if (searchKey) {
           url += `&search=${searchKey}`;
         }

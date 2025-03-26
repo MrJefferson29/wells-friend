@@ -14,7 +14,7 @@ const LoginScreen = () => {
 
     try {
       const { data } = await axios.post(
-        "https://ilan.onrender.com/auth/login",
+        "https://wells-friend.onrender.com/auth/login",
         { email, password }
       );
       localStorage.setItem("authToken", data.token);
